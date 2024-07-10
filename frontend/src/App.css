@@ -1,0 +1,60 @@
+/* App Container */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Editor Container */
+.editor-container {
+  margin-bottom: 20px;
+}
+
+/* Input and Output Section */
+.io-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-section,
+.output-section {
+  flex: 1;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual Button Styles */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Textarea Styles */
+textarea {
+  padding: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Notes Section */
+.notes-section {
+  margin-top: 20px;
+}
