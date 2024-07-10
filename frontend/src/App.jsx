@@ -43,7 +43,7 @@ int main() {
     };
 
     try {
-      const response = await axios.post('https://cpp-compiler-1-0-1.onrender.com/run', payload, {
+      const response = await axios.post( import.meta.env.VITE_BACKEND_URL , payload, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -52,7 +52,7 @@ int main() {
       setOutput(response.data.output);
       setStderr(''); // Clear any previous errors
     } catch (err) {
-      console.log("Here is my error : " , err.response);
+      console.log("Here is my error : " , err);
       setStderr(err.response.data.error.error || err.message || "Unknown error occurred"); // Set stderr state
     }
   };
